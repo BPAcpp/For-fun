@@ -1,0 +1,531 @@
+//class produck
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+class Product {
+public:
+    //Products
+    void boil_grecha();
+    void boil_potato();
+    void klukva();
+    void boil_ovsyanka();
+    void  end();
+    // Products
+    Product() {
+
+    };
+
+    ~Product() {
+    };
+
+private:
+    ///otdel
+    float belki = 0;
+    float fat = 0;
+    float uglevods = 0;
+    float kkal = 0;
+    ///otdel
+    //Minerals
+    float kalciy = 0;
+    float jelezo = 0;
+    float magniy = 0;
+    float fosfor = 0;
+    float caliy = 0;
+    float natriy = 0;
+    float cink = 0;
+    float medb = 0;
+    float marganec = 0;
+    float selenl = 0;
+    float ftor = 0;
+    //minerals
+    ///vitamins
+
+    float Vit_A = 0;
+    float Beta_karotin = 0;
+    float Alpha_karotin = 0;
+    float Vit_D = 0;
+    float Vit_D2 = 0;
+    float Vit_D3 = 0;
+    float Vit_E = 0;
+    float Vit_K = 0;
+    float Vit_C = 0;
+    float Vit_B1 = 0;
+    float Vit_B2 = 0;
+    float Vit_B3 = 0;
+    float Vit_B4 = 0;
+    float Vit_B5 = 0;
+    float Vit_B6 = 0;
+    float Vit_B9 = 0;
+    float Vit_B12 = 0;
+    ///vitamins
+    ///amino
+    float Triptofan = 0;
+    float Treonin = 0;
+    float Izoleycin = 0;
+    float Leycin = 0;
+    float Lizin = 0;
+    float Meteonin = 0;
+    float Cistin = 0;
+    float Felalanin = 0;
+    float Triozin = 0;
+    float Valin = 0;
+    float Arginin = 0;
+    float Gicidin = 0;
+    float Alanin = 0;
+    float Asparaginovaya = 0;
+    float Glutaminovaya = 0;
+    float Glucin = 0;
+    float Prolin = 0;
+    float Serin = 0;
+    ///amino
+};
+
+
+
+
+///minerals
+/*
+float kalciy;
+float jelezo+=
+float magniy+=
+float fosfor+=
+float caliy+=
+float natriy+=
+float cink+=
+float medb+=
+float marganec+=
+float selenl+=
+float ftor+=
+*/
+
+///vitamins
+/*
+vit_A+=0;
+Beta_karotin+=;
+Alpha_karotin+=;
+Vit_D+=;
+Vit_D2+=;
+Vit_D3+=;
+Vit_E+=;
+Vit_K+=;
+Vit_C+=;
+Vit_B1+=;
+Vit_B2+=;
+Vit_B3+=;
+Vit_B4+=;
+Vit_B5+=;
+Vit_B6+=;
+Vit_B9+=;
+Vit_B12+=;
+*/
+
+/*amino
+Triptofan
+Treonin
+Izoleycin
+Leycin
+Lizin
+Meteonin
+Cistin
+Felalanin
+Triozin
+Valin
+Arginin
+Gicidin
+Alanin
+Asparaginovaya
+Glutaminovaya
+Glucin
+Prolin
+Serin
+amino
+*/ // amino
+
+/*otdel
+float belki+=0;
+float fat+=0;
+float uglevods+=0;
+float kkal+=0;
+*/ //otdel
+/////////////////////////////Main
+
+int main()
+{
+    setlocale(LC_ALL, "ru");
+    Product a;
+    int check=0;
+    int const size = 5;
+    cout << "Введите цифру равную номеру продукта для добавления в список!\n";
+    cout << "\t1 - Варёная гречка (100 грамм)." << endl;
+    cout << "\t2 - Варёный картофель (100 грамм)" << endl;
+    cout << "\t3 - Клюква (10 грамм)" << endl;
+    cout << "\t4 - Варёная овсянка (100 грамм)" << endl;
+    cout << "\n\n\tВведите 0 для вывода полученых данных\n";
+    for (;;)
+    {
+        cin >> check;
+
+        if (check == 0)//или любой символ (не число)
+        {
+            system("clear");//в некоторых компиляторах допустимо "cls"
+            cout << "Выбор завершен!" << endl;
+            break;
+        }
+
+        if (check == 1) {
+            a.boil_grecha();
+        }
+        if (check == 2) {
+
+            a.boil_potato();
+        }
+        if (check == 3) {
+
+            a.klukva();
+        }
+        if (check == 4) {
+            a.boil_ovsyanka();
+        }
+        if(check>4)
+        {
+            cout << "Вы ввели номер не указывающий ни на один из перечисленных проодуктов" << endl;
+        }
+    }
+    a.end();
+
+    return 0;
+}
+
+
+/////////////////////////////Main
+
+
+
+//////////////////////boil_grecha///////////////////////////////
+void Product::boil_grecha() {
+    ///otdel
+    belki += 4.5;
+    fat += 0.7;
+    uglevods += 6.4;
+    kkal += 92;
+    ///otdel///////////////////////////////
+    /////Minerals///////////////////////////////
+    kalciy += +0.7;
+    jelezo += 8;
+    magniy += 12.8;
+    fosfor += 10;
+    caliy += 1.9;
+    natriy += 0.3;
+    cink += 5.5;
+    medb += 16.2;
+    marganec += 17.5;
+    selenl += 4;
+    ftor = ftor + 0;
+    ////Minerals///////////////////////////////
+    ///vitamins///////////////////////////////
+    Vit_A += 0;
+    Beta_karotin += 0;
+    Alpha_karotin += 0;
+    Vit_D += 0;
+    Vit_D2 += 0;
+    Vit_D3 += 0;
+    Vit_E += 0.6;
+    Vit_K += 1.6;
+    Vit_C += 0;
+    Vit_B1 += 3.3;
+    Vit_B2 += 3;
+    Vit_B3 += 5.9;
+    Vit_B4 += 4;
+    Vit_B5 += 7.2;
+    Vit_B6 += 5.9;
+    Vit_B9 += 3.5;
+    Vit_B12 += 0;
+    ///vitamins///////////////////////////////
+
+    ////amino///////////////////////////////
+    Triptofan += 6.1;
+    Treonin += 5.4;
+    Izoleycin += 6.4;
+    Leycin += 4.6;
+    Lizin += 4.2;
+    Meteonin += 2.4;
+    Cistin += 3.2;
+    Felalanin += 3;
+    Triozin += 1.4;
+    Valin += 6.9;
+    Arginin += 4.1;
+    Gicidin += 3.8;
+    Alanin += 2.9;
+    Asparaginovaya += 2.4;
+    Glutaminovaya += 3.8;
+    Glucin += 7.5;
+    Prolin += 2.9;
+    Serin += 2.1;
+    cout << "100 gramm boil grecha" << endl;
+}
+//////////////////////boil_grecha///////////////////////////////
+void Product::boil_potato() {
+    ///otdel
+    belki += 2.3;
+    fat += 0.1;
+    uglevods += 6.5;
+    kkal += 86;
+    ///otdel///////////////////////////////
+    /////Minerals///////////////////////////////
+    kalciy += +0.8;
+    jelezo += 3.1;
+    magniy += 5;
+    fosfor += 5.7;
+    caliy += 7;
+    natriy += 0.4;
+    cink += 2.5;
+    medb += 18.6;
+    marganec += 6.1;
+    selenl += 0.5;
+    ftor = ftor + 0;
+    ////Minerals///////////////////////////////
+    ///vitamins///////////////////////////////
+    Vit_A += 0;
+    Beta_karotin += 0;
+    Alpha_karotin += 0;
+    Vit_D += 0;
+    Vit_D2 += 0;
+    Vit_D3 += 0;
+    Vit_E += 0.1;
+    Vit_K += 1.8;
+    Vit_C += 8.2;
+    Vit_B1 += 8.2;
+    Vit_B2 += 1.5;
+    Vit_B3 += 8.2;
+    Vit_B4 += 2.6;
+    Vit_B5 += 10.2;
+    Vit_B6 += 20.7;
+    Vit_B9 += 2.3;
+    Vit_B12 += 0;
+    ///vitamins///////////////////////////////
+
+    ////amino///////////////////////////////
+    Triptofan += 3.4;
+    Treonin += 2.6;
+    Izoleycin += 3.5;
+    Leycin += 2.2;
+    Lizin += 2.5;
+    Meteonin += 1.5;
+    Cistin += 1.2;
+    Felalanin += 1.7;
+    Triozin += 1.5;
+    Valin += 3.8;
+    Arginin += 1.3;
+    Gicidin += 1.8;
+    Alanin += 0.8;
+    Asparaginovaya += 3.4;//Asparaginovay
+    Glutaminovaya += 2.1;
+    Glucin += 1.5;
+    Prolin += 1.4;
+    Serin += 0.9;
+    cout << "100 gramm boil potato" << endl;
+}
+////////////end///////////////////////////////////
+void Product::end() {
+    cout << "Function End" << endl;
+    cout << " ___Bazik otdel___" << endl;
+    cout << "|_________________|\n";
+    ///otdel
+    cout << "belki = " << belki << "%" << endl;
+    cout << "fat = " << fat << "%" << endl;
+    cout << "uglevods = " << uglevods << "%" << endl;
+    cout << "kkal = " << kkal << endl;
+    cout << "|_________________|\n";
+    ///otdel///////////////////////////////
+
+    cout << "___Start Minerals!___\n";
+    ////Minerals///////////////////////////////
+    cout << "kalciy = " << kalciy << "%" << endl;
+    cout << "jelezo = " << jelezo << "%" << endl;
+    cout << "magniy = " << magniy << "%" << endl;
+    cout << "fosfor = " << fosfor << "%" << endl;
+    cout << "caliy = " << caliy << "%" << endl;
+    cout << "natriy = " << natriy << "%" << endl;
+    cout << "cink = " << cink << "%" << endl;
+    cout << "medb = " << medb << "%" << endl;
+    cout << "marganec = " << marganec << "%" << endl;
+    cout << "selenl = " << selenl << "%" << endl;
+    cout << "ftor = " << ftor << "%" << endl;
+    cout << "____End Minerals!____\n" << endl;
+    /////minerals///////////////////////////////
+    cout << "___Start Vitamins!___" << endl;
+    /////vitamins///////////////////////////////
+    cout << "Vit_A = " << Vit_A << "%" << endl;
+    cout << "Beta_karotin = " << Beta_karotin << "%" << endl;
+    cout << "Alpha_karotin = " << Alpha_karotin << "%" << endl;
+    cout << "Vit_D = " << Vit_D << "%" << endl;
+    cout << "Vit_D2 = " << Vit_D2 << "%" << endl;
+    cout << "Vit_D3 = " << Vit_D3 << "%" << endl;
+    cout << "Vit_E = " << Vit_E << "%" << endl;
+    cout << "Vit_K = " << Vit_K << "%" << endl;
+    cout << "Vit_C = =" << Vit_C << "%" << endl;
+    cout << "Vit_B1 = " << Vit_B1 << "%" << endl;
+    cout << "Vit_B2 = " << Vit_B2 << "%" << endl;
+    cout << "Vit_B3 = " << Vit_B3 << "%" << endl;
+    cout << "Vit_B4 = " << Vit_B4 << "%" << endl;
+    cout << "Vit_B5 = " << Vit_B5 << "%" << endl;
+    cout << "Vit_B6 = " << Vit_B6 << "%" << endl;
+    cout << "Vit_B9 = " << Vit_B9 << "%" << endl;
+    cout << "Vit_B12 = " << Vit_B12 << "%" << endl;
+    cout << "____End Vitamins!____\n" << endl;
+    ///vitamins///////////////////////////////
+
+    ///amino///////////////////////////////
+    cout << "___Start Amino!___\n";
+    cout << "Triptofan = " << Triptofan << "%" << endl;
+    cout << "Treonin = " << Treonin << "%" << endl;
+    cout << "Izoleycin = " << Izoleycin << "%" << endl;
+    cout << "Leycin = " << Leycin << "%" << endl;
+    cout << "Lizin = " << Lizin << "%" << endl;
+    cout << "Meteonin = " << Meteonin << "%" << endl;
+    cout << "Cistin = " << Cistin << "%" << endl;
+    cout << "Felalanin = " << Felalanin << "%" << endl;
+    cout << "Triozin = " << Triozin << "%" << endl;
+    cout << "Valin = " << Valin << "%" << endl;
+    cout << "Arginin = " << Arginin << "%" << endl;
+    cout << "Gicidin = " << Gicidin << "%" << endl;
+    cout << "Alanin = " << Alanin << "%" << endl;
+    cout << "Asparaginovaya = " << Asparaginovaya << "%" << endl;
+    cout << "Glutaminovaya = " << Glutaminovaya << "%" << endl;
+    cout << "Glucin = " << Glucin << "%" << endl;
+    cout << " Prolin = " << Prolin << "%" << endl;
+    cout << "Serin = " << Serin << "%" << endl;
+    cout << "___End Amino!___\n";
+    ///amino///////////////////////////////
+}
+////////////end///////////////////////////////
+
+
+
+void Product::klukva() {
+    ///otdel
+    belki += 0.06;
+    fat += 0.02;
+    uglevods += 0.39;
+    kkal += 47;
+    ///otdel///////////////////////////////
+    /////Minerals///////////////////////////////
+    kalciy += +0.08;
+    jelezo += 0.23;
+    magniy += 0.15;
+    fosfor += 0.16;
+    caliy += 0.17;
+    natriy += 0.02;
+    cink += 0.08;
+    medb += 0.62;
+    marganec += 1.6;
+    selenl += 0.02;
+    ftor = ftor + 0;
+    ////Minerals///////////////////////////////
+    ///vitamins///////////////////////////////
+    Vit_A += 0.03;
+    Beta_karotin += 0.08;
+    Alpha_karotin += 0.;
+    Vit_D += 0;
+    Vit_D2 += 0;
+    Vit_D3 += 0;
+    Vit_E += 0.9;
+    Vit_K += 0.42;
+    Vit_C += 1.56;
+    Vit_B1 += 0.1;
+    Vit_B2 += 0.15;
+    Vit_B3 += 0.06;
+    Vit_B4 += 0.11;
+    Vit_B5 += 0.59;
+    Vit_B6 += 0.44;
+    Vit_B9 += 0.03;
+    Vit_B12 += 0;
+    ///vitamins///////////////////////////////
+
+    ////amino///////////////////////////////
+    Triptofan += 0.04;
+    Treonin += 0.12;
+    Izoleycin += 0.17;
+    Leycin += 0.12;
+    Lizin += 0.1;
+    Meteonin += 0.02;
+    Cistin += 0.02;
+    Felalanin += 0.08;
+    Triozin += 0.07;
+    Valin += 0.18;
+    Arginin += 0.09;
+    Gicidin += 0.09;
+    Alanin += 0.07;
+    Asparaginovaya += 0.15;
+    Glutaminovaya += 0.11;
+    Glucin += 0.14;
+    Prolin += 0.07;
+    Serin += 0.06;
+    cout << "10 gramm klukva" << endl;
+}
+
+
+
+void Product::boil_ovsyanka() {
+    ///otdel
+    belki += 3.4;
+    fat += 1.8;
+    uglevods += 3.9;
+    kkal += 71;
+    ///otdel///////////////////////////////
+    /////Minerals///////////////////////////////
+    kalciy += +0.9;
+    jelezo += 9;
+    magniy += 6.8;
+    fosfor += 11;
+    caliy += 1.5;
+    natriy += 0.3;
+    cink += 9.1;
+    medb += 8.2;
+    marganec += 25.2;
+    selenl += 9.8;
+    ftor += 1.8;
+    ////Minerals///////////////////////////////
+    ///vitamins///////////////////////////////
+    Vit_A += 0;
+    Beta_karotin += 0;
+    Alpha_karotin += 0;
+    Vit_D += 0;
+    Vit_D2 += 0;
+    Vit_D3 += 0;
+    Vit_E += 0.5;
+    Vit_K += 0.3;
+    Vit_C += 1.56;
+    Vit_B1 += 6.3;
+    Vit_B2 += 1.2;
+    Vit_B3 += 1.4;
+    Vit_B4 += 1.5;
+    Vit_B5 += 6.2;
+    Vit_B6 += 0.4;
+    Vit_B9 += 1.5;
+    Vit_B12 += 0;
+    ///vitamins///////////////////////////////
+
+    ////amino///////////////////////////////
+    Triptofan += 5;
+    Treonin += 4;
+    Izoleycin += 5.8;
+    Leycin += 4.8;
+    Lizin += 3.3;
+    Meteonin += 2.6;
+    Cistin += 5.4;
+    Felalanin += 3.2;
+    Triozin += 2.3;
+    Valin += 6.4;
+    Arginin += 2.7;
+    Gicidin += 2.6;
+    Alanin += 1.9;
+    Asparaginovaya += 2.5;
+    Glutaminovaya += 4.6;
+    Glucin += 4.2;
+    Prolin += 2.1;
+    Serin += 1.8;
+    cout << "100 gramm boil_ovsyanka" << endl;
+}
