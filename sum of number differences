@@ -1,0 +1,60 @@
+
+#include <iostream>
+#include <cstdlib>
+	using namespace std;
+	int main() {
+		setlocale(0, "");
+		int result, a, c=10;//Zero potassium denotes cell potassium in a variable
+/* c = 10 изначально по простой причине result = a % c / (c / 10);  результат = 5%10 /(10/10) =5/1=5;*/
+		cout << "введите число: ";
+		cin >> a;
+		int iter = 1;
+		for (int i = 10;; i = i * 10) {
+			if (a < 10) 
+{
+				iter -= 1;
+				break;
+			}
+			if (a / i < 10)
+/ * allowed 100. 100/10 = 10 (condition did not work)
+means a variable greater than double-digit (for this you need to add 0 to variable C) with * 10 = 10 * 10 = 100 (2 zeros shows that the number is double-digit)
+additionally, multiplication is necessary because it was in this iteration of the cycle that we found potassium to be a sign in the number
+to equalize the potassium of zeros and signs, we do additional multiplication */
+{
+				c = c * 10;
+				break;
+			}
+			else {
+				if (c == 0) //по сути не нужный код
+{
+					c = c + 10;
+					
+				}
+				else 
+{
+					c = c * 10;
+					iter = iter + 1;
+				}
+				
+			}
+		}
+		
+		for (int i = 0; i <= iter; i++) 
+{
+			result = a % c / (c / 10); /*допустим число 524
+2.524остаток от 1000=524.
+2.с/10=1000/10=100
+3.524/100=5(т.к остаток в инте не дописывается а округляется в меньшую сторону)
+4 убираем один 0 из С чтобы в следующий раз остаток остался 24
+...
+1 524%100=24 т.к это по сути просто убирает то, что показано =убирает сотни = 24
+затем 24/10 т.к (100/10=10)*/
+			c = c / 10;
+			cout << i + 1 << " число: " << result << endl;
+		} 
+		system("pause");
+		return 0;
+	}
+
+
+
